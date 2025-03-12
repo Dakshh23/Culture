@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100%;
+}
+#top{
+    min-height: 60vh;
+    width: 100%;
+    background-image: url('luigi.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+}
+#overlay{
+    position: relative;
+min-height: inherit;
+width: 100%;
+background-color: rgba(255, 235, 205, 0.121);
+
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 17%;
+    padding: 0 10vw;
+    
+   
+   
+}
+#text h1{
+    font-size: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    font-weight: 500;
+}
+#textu{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+}
+#textu p{
+    font-size: 13px;
+    width: 30%;
+}
+#bottom{
+    min-height: 40vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+}
+.b1{
+   width: 25%;
+   background-color: rgb(225, 229, 221);
+   min-height: inherit;
+   padding: 30px;
+   
+}
+.b1 p{
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+.b2{
+    width: 25%;
+    background-image: url('av.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+}
+.b3{
+    width: 20%;
+    background-color: rgb(39, 39, 23);
+    min-height: inherit;
+}
+#b3top{
+    width: 100%;
+    min-height: 13vh;
+    padding: 20px;
+    background-color: orangered;
+}
+#b3top h4{
+    color: #fff;
+    
+}
+#b3top p{
+    margin-top: 12px;
+    color:#fff;
+    font-size: 15px;
+    
+}
+#b3bot{
+    width: 100%;
+    min-height: inherit;
+    background-image: url('anthony-fomin-Gee1LDFJRQc-unsplash.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+.b4{
+    width: 30%;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #444;
+    color: #fff;
+    min-height: inherit;
+}
+.not{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.not #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('bken.jpg');
+    background-size: cover;
+}
+.not p{
+    padding-left: 50px;
+    padding-top: 10px;
+    width: 300px;
+    font-size: 12px;
+}
+.noti{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.noti #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('dj.webp');
+    background-size: cover;
+}
+.noti p{
+    padding-left: 50px;
+    padding-top: 10px;
+    width: 300px;
+    font-size: 12px;
+}
+@media(max-width:500px){
+      #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+
+      }
+      #text h1{
+        font-size: 10vw;
+      }
+      #overlay #text #textu{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #overlay #text #textu p{
+        width: initial;
+        margin-top: 20px;
+      }
+      #overlay #text #textu #icon{
+        margin-top: 30px;
+
+      }
+      #bottom{
+        flex-direction: column;
+        
+      }
+      .b1{
+        width: 100%;
+      }
+      .b2{
+        width: 100%;
+        flex-direction: column;
+        min-height: 50vh;
+      }
+      .b3{
+        width: 100%;
+        min-height: 40vh;
+      }
+      
+      .b4{
+        width: 100%;
+        min-height: inherit;
+      }
+}
